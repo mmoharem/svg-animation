@@ -1,38 +1,38 @@
 svg {
-    /* position: absolute;
-    width: 200px;
+    position: absolute;
+    /* width: 200px; */
     margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; */
+    right: 0;
 
 }
 
-/* .squar {
-    stroke-dasharray: 8700px;
-    stroke-dashoffset: -8700px;
-    animation: draw-squar 1s 6;
+.monkey {
+    stroke-dasharray: 5981;
+    stroke-dashoffset: -5981px;
+    animation: monkey 4s 6;
     transform-origin: 50% 50%;
 }
-.hex {
+/* .hex {
     stroke-dasharray: 6467px;
     stroke-dashoffset: -6467px;
     animation: draw-hex 3s 6;
     transform-origin: 50% 50%;
-}
+} */
 
-@keyframes draw-squar {
+@keyframes monkey {
     from {
-        stroke-dashoffset: -8700px;
-        transform: rotate(0deg);
+        stroke-dashoffset: -5981px;
+        /* transform: rotate(0deg); */
     }
     to {
         stroke-dashoffset: 0;
-        transform: rotate(360deg);
+        /* transform: rotate(360deg); */
     }
 }
-@keyframes draw-hex {
+/* @keyframes draw-hex {
     from {
         stroke-dashoffset: -6467px;
         transform: rotate(0deg);
