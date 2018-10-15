@@ -12,22 +12,32 @@ svg {
 .monkey {
     stroke-dasharray: 5981;
     stroke-dashoffset: -5981px;
-    animation: monkey 4s 6;
     transform-origin: 50% 50%;
+    animation-name: monkey;
+    animation-delay: 0;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: backwards;
 }
 /* .hex {
     stroke-dasharray: 6467px;
     stroke-dashoffset: -6467px;
     animation: draw-hex 3s 6;
-    transform-origin: 50% 50%;
+    t\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ransform-origin: 50% 50%;
 } */
 
 @keyframes monkey {
-    from {
+    0% {
         stroke-dashoffset: -5981px;
         /* transform: rotate(0deg); */
     }
-    to {
+    70% {
+        stroke: blue;
+        /* transform: rotate(360deg); */
+    }
+    100% {
         stroke-dashoffset: 0;
         /* transform: rotate(360deg); */
     }
