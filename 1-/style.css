@@ -1,0 +1,38 @@
+svg {
+    position: absolute;
+    width: 200px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.squar {
+    stroke-dasharray: 8700px;
+    stroke-dashoffset: -8700px;
+    animation: draw-squar 1s 6;
+}
+.hex {
+    stroke-dasharray: 6467px;
+    stroke-dashoffset: -6467px;
+    animation: draw-hex 3s 6;
+}
+
+@keyframes draw-squar {
+    from {
+        stroke-dashoffset: -8700px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes draw-hex {
+    from {
+        stroke-dashoffset: -6467px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
